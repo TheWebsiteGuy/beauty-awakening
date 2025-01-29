@@ -1,0 +1,45 @@
+---
+import CastleHill from '@components/CastleHill.astro'
+import Welcome from '@components/Welcome.astro'
+import Layout from '@layouts/BaseLayout.astro'
+import Room from '@components/Room.astro'
+import Footer from '@components/Footer.astro'
+import MobileNav from '@components/MobileNav.astro'
+
+import directus from '@api/directus'
+import { readItems } from '@directus/sdk'
+import { Image } from 'astro:assets'
+
+const homePage = await directus.request(
+  readItems('home_page', {
+    fields: ['*'],
+  })
+)
+
+const backgroundImageUrl = `${import.meta.env.PUBLIC_API}/assets/${homePage.featured_image}`
+const castleHillImage = `${import.meta.env.PUBLIC_API}/assets/${homePage.castle_hill_bg_img}`
+const castleHillMedia = `${import.meta.env.PUBLIC_API}/assets/${homePage.castle_hill_media}`
+export const prerender = true
+---
+
+<Layout title={homePage.title} backgroundImageUrl={backgroundImageUrl}>
+  
+    <div class="relative flex-grow">
+      <Welcome headline={homePage.headline}  />
+
+      <div class="relative flex-grow bg-neutral py-20">
+        <CastleHill
+          castle_hill_bg_img={castleHillImage}
+          castle_hill_headline={homePage.castle_hill_headline}
+          castle_hill_content={homePage.castle_hill_content}
+          castle_hill_media={castleHillMedia}
+        />
+      </div>
+      <div class="flex-grow relative py-10 bg-neutral" >
+        <Room />
+      </div>
+    </div>
+
+  
+  
+</Layout>
