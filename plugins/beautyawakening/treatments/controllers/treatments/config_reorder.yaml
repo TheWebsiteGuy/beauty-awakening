@@ -1,0 +1,4 @@
+title: Treatments
+modelClass: BeautyAwakening\Treatments\Models\Treatments
+toolbar:
+    buttons: reorder_toolbar

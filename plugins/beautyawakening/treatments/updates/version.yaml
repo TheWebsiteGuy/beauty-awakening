@@ -1,0 +1,8 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table beautyawakening_treatments_treatment'
+    - builder_table_create_beautyawakening_treatments_treatment.php
+1.0.3:
+    - 'Created table beautyawakening_treatments_category'
+    - builder_table_create_beautyawakening_treatments_category.php

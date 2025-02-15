@@ -1,0 +1,10 @@
+name: Treatments
+form: $/beautyawakening/treatments/models/treatments/fields.yaml
+modelClass: BeautyAwakening\Treatments\Models\Treatments
+defaultRedirect: beautyawakening/treatments/treatments
+create:
+    redirect: 'beautyawakening/treatments/treatments/update/:id'
+    redirectClose: beautyawakening/treatments/treatments
+update:
+    redirect: beautyawakening/treatments/treatments
+    redirectClose: beautyawakening/treatments/treatments

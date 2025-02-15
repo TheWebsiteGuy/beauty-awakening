@@ -1,0 +1,27 @@
+fields:
+    name:
+        label: Name
+        span: full
+        type: text
+    description:
+        label: Description
+        size: ''
+        span: full
+        type: richeditor
+    duration:
+        label: Duration
+        span: auto
+        type: number
+    price:
+        label: Price
+        span: auto
+        type: number
+    booking_link:
+        label: 'Booking link'
+        span: full
+        type: text
+    disclaimer:
+        label: Disclaimer
+        span: full
+        size: ''
+        type: richeditor
