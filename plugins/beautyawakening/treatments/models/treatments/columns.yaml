@@ -6,7 +6,7 @@ columns:
     created_at:
         label: created_at
         type: datetime
-        invisible: false
+        invisible: true
     updated_at:
         label: updated_at
         type: datetime
@@ -26,16 +26,20 @@ columns:
     duration:
         label: duration
         type: text
-        invisible: true
+        invisible: false
     price:
         label: price
         type: text
-        invisible: true
+        invisible: false
     booking_link:
         label: booking_link
         type: text
         invisible: true
     disclaimer:
         label: disclaimer
+        type: text
+        invisible: true
+    category:
+        label: category
         type: text
         invisible: false

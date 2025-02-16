@@ -6,3 +6,9 @@
 1.0.3:
     - 'Created table beautyawakening_treatments_category'
     - builder_table_create_beautyawakening_treatments_category.php
+1.0.4:
+    - 'Drop table beautyawakening_treatments_category'
+    - builder_table_delete_beautyawakening_treatments_category.php
+1.0.5:
+    - 'Updated table beautyawakening_treatments_treatment'
+    - builder_table_update_beautyawakening_treatments_treatment.php

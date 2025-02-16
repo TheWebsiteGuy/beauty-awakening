@@ -1,8 +1,0 @@
-tabs:
-    fields:
-        name:
-            label: 'beautyawakening.treatments::lang.name'
-            span: full
-            required: 1
-            type: text
-            tab: 'Tab 1'

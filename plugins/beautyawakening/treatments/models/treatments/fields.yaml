@@ -1,11 +1,24 @@
 fields:
     name:
         label: Name
-        span: full
+        span: auto
         type: text
+    category:
+        label: Category
+        options:
+            massages: Massages
+            facials: Facials
+            nails: Nails
+            eyes: Eyes
+            hair: Hair
+            spa: Spa
+        showSearch: true
+        span: auto
+        placeholder: 'Select category'
+        type: dropdown
     description:
         label: Description
-        size: ''
+        size: small
         span: full
         type: richeditor
     duration:
@@ -22,6 +35,6 @@ fields:
         type: text
     disclaimer:
         label: Disclaimer
+        size: small
         span: full
-        size: ''
         type: richeditor

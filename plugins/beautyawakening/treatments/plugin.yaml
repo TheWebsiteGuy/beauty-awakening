@@ -9,11 +9,6 @@ navigation:
         label: 'beautyawakening.treatments::lang.treatments'
         url: beautyawakening/treatments/treatments
         icon: 'fas icon-spa'
-        sideMenu:
-            treatment:
-                label: 'beautyawakening.treatments::lang.treatment'
-                url: beautyawakening/treatments/treatments
-                icon: 'fas icon-spa'
 permissions:
     manage_treatment:
         tab: 'beautyawakening.treatments::lang.plugin.name'
