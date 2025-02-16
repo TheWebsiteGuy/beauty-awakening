@@ -15,24 +15,24 @@ export default defineConfig({
             protocol: 'ws',
             port: 5173,
         },
-        
+
         watch: {
-            usePolling: true 
+            usePolling: true
         }
     },
     plugins: [
         laravel({
             publicDirectory: 'assets/dist',
             input: [
-                'assets/src/css/theme-lancasters.css',
-                'assets/src/js/theme-lancasters.js',
+                'assets/src/css/theme-beauty.css',
+                'assets/src/js/theme-beauty.js',
             ],
             refresh: {
                 paths: [
                     './**/*.htm',
                     './**/*.block',
-                    'assets/src/**/*.css', 
-                    'assets/src/**/*.js',  
+                    'assets/src/**/*.css',
+                    'assets/src/**/*.js',
                 ]
             },
             middlewareMode: true,
